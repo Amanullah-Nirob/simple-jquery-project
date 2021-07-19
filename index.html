@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>developer porfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +15,15 @@
 <script src="https://thodorisbais.github.io/percircle/dist/js/percircle.js"></script>
 <link rel="stylesheet" href="https://thodorisbais.github.io/percircle/dist/css/percircle.css">
 
+
+
+
+
 </head>
 <body>
-    <header>
+    <header class="">
         <div class="container">
-            <div class="all-navbar-content">
+            <div class="all-navbar-content wow bounceInDown">
 <div class="logo">
 <h2><small>d</small>eveloper</h2>
 </div>
@@ -65,7 +70,7 @@ contact
 <section class="home-section">
 <div class="home-section-container">
 <div class="home-section-all-content">
-<div class="left-content-titles">
+<div class="wow flip left-content-titles">
 <div class="tilte1">hey guys,my name is</div>
 <div class="tilte2">farhan ahmed jovan</div>
 <div class="tilte3">and i'm a <span class="typed"></span></div>
@@ -80,41 +85,107 @@ contact
 
 
 
-
-
-
-
-
-
-
-
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
 </section>
 
+    
 
 
+
+<section class="Appointment-section">
+<div class="Appointment-section-container">
+    <h1 class="Appointment-title">
+        <span>a</span>
+        <span>p</span>
+        <span>p</span>
+        <span>o</span>
+        <span>i</span>
+        <span>n</span>
+        <span>t</span>
+        <span>m</span>
+        <span>e</span>
+        <span>n</span>
+        <span>t</span>
+      <br>
+      <span>n</span>
+      <span>o</span>
+      <span>w</span>
+
+
+      </h1>
+    
+<div class="Appointment-section-all-content">
+<div class="wow slideInLeft  left-content-img" >
+    <img src="img/farhan.jpg" alt="">
+</div>
+
+<div class="wow fadeInRightBig right-content-form">
+    <form action="">
+      
+      <div class="all-baje-icon">
+        <img class="iconbaje" src="img/icon3.jpg" alt="">
+        <img class="iconbaje add" src="img/icon3.jpg" alt="">
+      </div>
+
+        <div class="form-title">
+            
+<span>i</span>
+<span>n</span>
+<span>t</span>
+<span>e</span>
+<span>r</span>
+<span>v</span>
+<span>i</span>
+<span>e</span>
+<span>w</span>
+<span>e</span>
+<span>r</span>
+<br>
+<span>d</span>
+<span>e</span>
+<span>t</span>
+<span>a</span>
+<span>i</span>
+<span>l</span>
+<span>s</span>
+
+            
+
+
+
+
+
+
+
+            <hr>
+        </div>
+     
+<p>interviewer name</p>
+<input type="name" name="name" placeholder="interviewer name">
+
+<p> email</p>
+<input type="email" name="email" placeholder="interviewer email">
+
+<p>phone</p>
+<input type="phone" name="phone" placeholder="interviewer phone">
+
+<p>date</p>
+<input type="date" name="data" placeholder="date">
+
+<div class="all-baje-icon nambar2">
+    <img class="iconbaje" src="img/icon2.jpg" alt="">
+    <img class="iconbaje add" src="img/icon2.jpg" alt="">
+  </div>
+
+
+</form>
+
+</div>
+
+</div>
+</div>
+</section>
 
 
 
@@ -138,40 +209,71 @@ contact
 </footer>
 
 
-<script src="jquery.min.js"></script>
 
+
+
+
+
+
+
+
+
+
+<script src="jquery.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script>
 var typed = new Typed('.typed', {
-  // Waits 1000ms after typing "First"
-  strings: [
-
-  'actor',
-  'web developer',
+    // Waits 1000ms after typing "First"
+    strings: [
   
-      'youtuber', 
-      'web desingner',
-'blogger'
+    'actor',
+    'web developer',
+    
+        'youtuber', 
+        'web desingner',
+  'blogger'
+  
+  
+  ],
+  
+  
+  loop:true,
+  typeSpeed: 100,
+  
+  backSpeed:50,
+  backDelay:100,
+  
+  })
 
 
-],
-
-
-loop:true,
-typeSpeed: 100,
-
-backSpeed:50,
-backDelay:100,
-
-});
 
 
 
+  wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
 </script>
-
-
-
 
 
 
